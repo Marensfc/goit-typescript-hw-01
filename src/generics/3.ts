@@ -4,5 +4,5 @@ function merge<T extends objectWithoutArray, U extends objectWithoutArray>(
   objA: T,
   objB: U
 ): T & U {
-  return Object.assign(objA, objB);
+  return Object.assign({}, objA, objB);
 }
